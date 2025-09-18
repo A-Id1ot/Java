@@ -59,7 +59,7 @@ class Main {
 */
     int b=10;
     int h=10;
-    double a=(1/2)*(b*h);
+    double a=(0.5)*(b*h);
     System.out.println(a);
 /*  
     **** Bonus Challenge ****:
