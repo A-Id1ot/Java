@@ -47,8 +47,8 @@ class Main {
     Using the variables same variables from challenge4 above, write the following equation in EQ2.PNG file in Java, store the result and the display it:
     Declare and assign values to any new variables
 */
-    int a2=10;
-    int x2=4;
+    double a2=10;
+    double x2=4;
     double y2=(2*x*(x2+1)*(x2/2))/a2;
     System.out.println(y2);
 /*  
@@ -57,8 +57,8 @@ class Main {
     file  EQ3.PNG
     Declare and assign values to any new variables
 */
-    int b=10;
-    int h=10;
+    double b=10;
+    double h=10;
     double a=(0.5)*(b*h);
     System.out.println(a);
 /*  
