@@ -31,7 +31,7 @@ class Main {
     Declare and assign values to any new variables
     NOTE: Does it look correct, check with a calculator?
 */
-    double v8 = v7/3;
+    double v8 = v7/3.0;
     System.out.println(v8);
 /*  
     Challenge 4:
