@@ -49,7 +49,7 @@ class Main {
 */
     double a2=10;
     double x2=4;
-    double y2=(2*x*(x2+1)*(x2/2))/a2;
+    double y2=(2*x*(x2+1)*(-x2/2))/a2;
     System.out.println(y2);
 /*  
     Challenge 6:
