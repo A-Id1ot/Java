@@ -37,15 +37,15 @@ class Main {
         of beans: $25 savings
         Otherwise: $0 savings.
     */
-  String groceryDiscount(double spent, int cans){
+  double groceryDiscount(double spent, int cans){
     if((spent>=100&&spent<=200)&&cans>=3){
-      return "$10 savings";
+      return spent-10;
     }
     else if(spent>200&&cans>4){
-      return "$25 savings";
+      return spent-25;
     }
     else{
-      return "$0 savings";
+      return spent;
     }
   }
 }
