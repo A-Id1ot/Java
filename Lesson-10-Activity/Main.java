@@ -59,11 +59,11 @@ class Main {
 			return 10+(0.02*(weight-25));
 		}
 	}
-	boolean blueOrViolet(double light){
-		if(light>=600&&light<=670){
+	boolean blueOrViolet(double THz){
+		if(THz>=600&&THz<=670){
 			return true;
 		}
-		else if(light>=700&&light<=750){
+		else if(THz>=700&&THz<=750){
 			return true;
 		}
 		else{
