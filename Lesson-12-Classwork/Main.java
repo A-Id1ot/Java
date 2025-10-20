@@ -8,6 +8,8 @@ class Main {
 
   void init(){
     System.out.println(collegeCredit("asdfasdf"));
+    System.out.println(getCounsoler("Hello","World"));
+    System.out.println(imageType("something.png"));
   }
   boolean collegeCredit(String co){
     if(co.substring(5,6).equals("M")||co.substring(5,6).equals("E")){
@@ -53,6 +55,23 @@ class Main {
     }
     else{
       return "Zayes";
+    }
+  }
+  String imageType(String fil){
+    if(fil.substring(fil.indexOf('.') + 1).equals("jpeg")||fil.substring(fil.indexOf('.') + 1).equals("jpg")){
+      return "Joint Photographic Experts Group";
+    }
+    else if(fil.substring(fil.indexOf('.') + 1).equals("png")){
+      return "Portable Network Graphics";
+    }
+    else if(fil.substring(fil.indexOf('.') + 1).equals("gif")){
+      return "Graphics Interchange Format";
+    }
+    else if(fil.substring(fil.indexOf('.') + 1).equals("pdf")){
+      return "Portable Document Format";
+    }
+    else{
+      return "Unknown file type";
     }
   }
 }
