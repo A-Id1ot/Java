@@ -6,7 +6,7 @@ class Main {
   void printt(Object o){ System.out.print(o);}
   void init(){
     System.out.println(creditCardType("711123"));
-    System.out.println(pigLatin("pig"));
+    System.out.println(pigLatin("agsfd"));
     System.out.println(nycLocate("10344"));
     System.out.println(getMonth("10/12/26"));
     System.out.println(validatePswd("false()"));
