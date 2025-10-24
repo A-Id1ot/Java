@@ -9,7 +9,7 @@ class Main {
     System.out.println(approxPI(10));
   }
   float approxPI(int t){
-    int pi=0;
+    double pi=0;
     for(int i=1;1<=t;i++){
       pi+=4*(1/t);
     }
