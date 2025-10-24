@@ -6,11 +6,13 @@ class Main {
   void printt(Object o){ System.out.print(o);}
 
   void init(){
-    
-
+    System.out.println(approxPI(10));
   }
-
-  
-  
-  
+  float approxPI(int t){
+    int pi=0;
+    for(int i=1;1<=t;i++){
+      pi+=4*(1/t);
+    }
+    return pi;
+  }
 }
