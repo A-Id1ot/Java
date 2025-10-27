@@ -10,7 +10,7 @@ class Main {
   }
   float approxPI(int t){
     float total = 0;
-      for (int i = 0; i < t; i++) {
+      for (int i=0;i<t;i++) {
         double term=Math.pow(-1,i)/(2*i+1);
         total+=term;
       }
