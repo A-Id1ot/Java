@@ -9,10 +9,11 @@ class Main {
     System.out.println(approxPI(10));
   }
   float approxPI(int t){
-    float pi=0;
-    for(int i=1;1<=t;i++){
-      pi+=4*(1/t);
-    }
-    return pi;
+    float total = 0;
+      for (int i = 0; i < t; i++) {
+        double term=Math.pow(-1,i)/(2*i+1);
+        total+=term;
+      }
+    return 4*total;
   }
 }
