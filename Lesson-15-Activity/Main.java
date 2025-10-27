@@ -24,13 +24,13 @@ class Main {
     return q;
   }
   int fib(int n){
-    int f=0,s=1;
-    for (int i=0;i<n;i++) {
+    int f = 0, s = 1;
+    for (int i = 0; i < n; i++) {
       System.out.println(f);
-      if(i<=n-1) System.out.println(", "); 
-        int n1=f+s;
-        f=s;
-        s=n1;
+      if (i <= n - 1) System.out.println(", ");
+        int n1 = f + s;
+        f = s;
+        s = n1;
     }
     return s;
   }
