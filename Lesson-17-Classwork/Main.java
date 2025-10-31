@@ -32,13 +32,14 @@ class Main {
     String bld="";
     String fh = t.substring(0,t.length()/2);
     String sh = t.substring(t.length()/2);
-    for (int x=0;x<fh.length();x++) {
+    for (int x=0;x<fh.length();x++){
       String l1=fh.substring(x,x+1);
       String l2=sh.substring(x,x+1);
       bld+=l1+l2;
     }
-    if (t.length()%2!=0) {
-      bld+=sh.charAt(sh.length()-1);
+    if (t.length()%2!=0) 
+      String sh1(sh.length()-1);
+      bld+=sh1;
     }
     return bld;
   }
