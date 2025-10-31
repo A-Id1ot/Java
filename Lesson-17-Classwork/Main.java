@@ -30,6 +30,7 @@ class Main {
   }
   String encryption2(String t){
     String bld="";
+    String sh1="";
     String fh = t.substring(0,t.length()/2);
     String sh = t.substring(t.length()/2);
     for (int x=0;x<fh.length();x++){
@@ -38,9 +39,8 @@ class Main {
       bld+=l1+l2;
     }
     if (t.length()%2!=0) 
-      String sh1(sh.length()-1);
+      sh1=sh.substring(sh.length()-1);
       bld+=sh1;
-    }
     return bld;
   }
 }
