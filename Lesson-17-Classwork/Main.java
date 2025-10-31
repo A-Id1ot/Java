@@ -38,9 +38,10 @@ class Main {
       String l2=sh.substring(x,x+1);
       bld+=l1+l2;
     }
-    if (t.length()%2!=0) 
+    if (t.length()%2!=0){
       sh1=sh.substring(sh.length()-1);
       bld+=sh1;
+    }
     return bld;
   }
 }
