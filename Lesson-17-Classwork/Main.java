@@ -34,13 +34,14 @@ class Main {
         String t2=t.substring((t.length()+1)/2);
         for(int x=0;x<=t1.length();x+=2){
         }
+        bld=t1+t2;
       }else{
         String t1=t.substring(0,(t.length()-1)/2);
         String t2=t.substring((t.length()+1)/2);
         for(int x=0;x<=t1.length();x+=2){
         }
+        bld=t1+t2;
       }
-    bld=t1+t2;
     return bld;
   }
 }
