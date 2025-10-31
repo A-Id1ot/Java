@@ -6,6 +6,7 @@ class Main {
   void printt(Object o){ System.out.print(o);}
   void init(){
     System.out.println(swapLetter("the seen","e","%"));
+    System.out.println(encryption2("abcdefghi"));
   }
   //will use reverse for problem 3
   String reverse(String s){
@@ -29,19 +30,16 @@ class Main {
   }
   String encryption2(String t){
     String bld="";
-      if(t.length()%2!=0){
-        String t1=t.substring(0,(t.length()-1)/2);
-        String t2=t.substring((t.length()+1)/2);
-        for(int x=0;x<=t1.length();x+=2){
-        }
-        bld=t1+t2;
-      }else{
-        String t1=t.substring(0,(t.length()-1)/2);
-        String t2=t.substring((t.length()+1)/2);
-        for(int x=0;x<=t1.length();x+=2){
-        }
-        bld=t1+t2;
-      }
+    String fh = t.substring(0,t.length()/2);
+    String sh = t.substring(t.length()/2);
+    for (int x=0;x<fh.length();x++) {
+      String l1=fh.substring(x,x+1);
+      String l2=sh.substring(x,x+1);
+      bld+=l1+l2;
+    }
+    if (t.length()%2!=0) {
+      bld+=sh.charAt(sh.length()-1);
+    }
     return bld;
   }
 }
