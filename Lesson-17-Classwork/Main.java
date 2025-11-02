@@ -7,6 +7,7 @@ class Main {
   void init(){
     System.out.println(swapLetter("the seen","e","%"));
     System.out.println(encryption2("abcdefghi"));
+    System.out.println(encryption3("abcdef"));
   }
   //will use reverse for problem 3
   String reverse(String s){
@@ -43,5 +44,13 @@ class Main {
       bld+=sh1;
     }
     return bld;
+  }
+  String encryption3(String s){
+    String result="";
+    int n=s.length();
+    for (int i=0;i<n/2;i++) {
+      result = result+s.substring(i,i+1)+s.substring(n-1-i,n-i);
+    }
+    return result; // no middle character
   }
 }
