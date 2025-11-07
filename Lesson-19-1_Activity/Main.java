@@ -24,8 +24,8 @@ class Main {
     return bld;
   }
   String additionTutor(){
-    int fn=(int)(Math.random()*600)+1;
-    int sn=(int)(Math.random()*600)+1;
+    int fn=(int)(Math.random()*60)+1;
+    int sn=(int)(Math.random()*60)+1;
     print("What is the answer:");
     print(fn + " + " + sn + " = ? ");
     int a=Input.readInt();
