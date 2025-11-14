@@ -37,4 +37,19 @@ class Main {
       }
     }
   }
+  void check(String c){
+    String uc="";
+    while( !uc.equals(c) ){
+      print("Enter your security code:");
+      uc=Input.readString();
+    }
+    print("Access granted...");
+  }
+  int GCF(int n1, int n2){
+    int d = Math.min(n1,n2);
+    while( !(n1%d==0 && n2%d==0) ){
+      d--;
+    }
+    return d;
+  }
 }
