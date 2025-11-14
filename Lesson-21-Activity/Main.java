@@ -7,6 +7,7 @@ class Main {
   void init(){
     allowance();
     addTwoNumbers();
+    print(GCF(12,18));
   }
   int randInt(int lower, int upper){
     int range = upper - lower;
@@ -39,7 +40,7 @@ class Main {
   }
   void check(String c){
     String uc="";
-    while( !uc.equals(c) ){
+    while(!uc.equals(c)){
       print("Enter your security code:");
       uc=Input.readString();
     }
