@@ -9,6 +9,9 @@ class Main {
     double[] t={-4,5,0,23,34,5,10};
     double[] tf = convert(t);
     print(tf);
+    for(int i=0;i<=t.length-1;i++){
+      print(tf[i]);
+    }
   }
   double[] convert(double[] t){
     double[] f1=new double[t.length];
