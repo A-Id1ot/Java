@@ -7,25 +7,50 @@ class Main {
   void init(){
     //Using this array to test your summArray and avgArray function
     int nums[] = {10,15,22,54,32,34,65,87,45,100,23,99,95,87,56,83};
+    print(sumArray(nums));
+    print(avgArray(nums));
     // Use these two arrays to test your quizGrader function
     char[] studentAns = {'A','A','B','C','D','C'};
     char[] ansKey = {'A','B','B','C','D','C'};
+    print(quizGrader(studentAns, ansKey));
   }
   //Problem 1:
   // Write a function called sumArray that accepts an array of integers and
   // returns the sum of all the values in the array.
-  
+  double sumArray(int[] nums){
+    double sum=0;
+    for(int i=0;i<nums.length;i++){
+      sum+=nums[i];
+    }
+    return sum;
+  }
   //Problem 2
   // Write a function called avgArray that accepts an array of integers and
   // returns the average of the values in the array
-
+  double avgArray(int[] nums){
+    double s=0;
+    for(int i=0;i<nums.length;i++){
+      s+=nums[i];
+    }
+    double s2=s/nums.length;
+    return s2;
+  }
   //Problem 3
   // Write a function called quizGrader that accepts two arrays of characters.  One array 
   // represents the students answers and the other array represents the answer key.
   //
   // Return the quiz grade by counting the number of correct answers divided by
   // the number of quistions.
-
+  double quizGrader(char[] studentAns,char[] ansKey){
+    int c=0;
+    double q=ansKey.length;
+    for(int i=0;i<ansKey.length;i++){
+      if(studentAns[i]==ansKey[i]){
+        c++;
+      }
+    }
+    return c/q;
+  }
   int randInt(int lower, int upper){
     int range = upper - lower;
     return (int)(Math.random()*range+lower);
