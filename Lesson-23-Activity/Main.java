@@ -9,9 +9,11 @@ class Main {
     int[] n={2,4,6,8,10,12,14,16,18,20,22};
     int[] l={0,7,4,2,3,2};
     int[] w={6,7,5,2,9,5};
+    int[] b={1,2};
     print(total(p));
     print(isin(n, 2));
     print(checkLotto(l,w));
+    print(biggest(b));
   }
   // Use these functions below for the activity
   String convertToEmoji(String code){
@@ -57,5 +59,14 @@ class Main {
       }
     }
     return c;
+  }
+  int biggest(int[] n){
+    int t=0;
+    for (int i=0;i<n.length;i++) {
+      if(n[i]>t){
+        t=n[i];
+      }
+    }
+    return t;
   }
 }
