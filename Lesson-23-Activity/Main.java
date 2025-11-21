@@ -33,12 +33,12 @@ class Main {
       return false;
   }
   double total(double[] p){
-    double sum = 0;
+    double s = 0;
     for (int i=0;i<p.length;i++) {
-      sum+=p[i];
+      s+=p[i];
     }
-    sum=(int)(100*(sum*1.08525));
-    return sum/100;
+    s=(int)(100*(s*1.08525));
+    return s/100;
   }
   boolean isin(int[] n,int s){
     boolean in=false;
