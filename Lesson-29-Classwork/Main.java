@@ -5,20 +5,20 @@ class Main {
   void print(Object o){ System.out.println(o);}
   void printt(Object o){ System.out.print(o);}
   void init(){
+    class Dog{
+      String breed;
+      int age;
+      String name;
+      void bark(){
+        System.out.println("Bark my name is "+name);
+      }
+    }
     Dog Toto=new Dog();
     Toto.name="Toto";
     Dog Snoopy=new Dog();
     Snoopy.name="Snoopy";
     Dog Poophy=new Dog();
     Poophy.name="Poophy";
-    class Dog{
-      String breed;
-      int age;
-      String name;
-      void bark(){
-        System.out.println("Bark my name is"+name);
-      }
-    }
     Toto.bark();
     Snoopy.bark();
     Poophy.bark();
