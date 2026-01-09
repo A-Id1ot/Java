@@ -5,7 +5,7 @@ class Main {
   void print(Object o){System.out.println(o);}
   void printt(Object o){System.out.print(o);}
   void init(){
-    car car1=new car("Toyota","grey","Corolla",2010,20000);
+    car car1=new car("Toyota","grey","Corolla",2009,20000);
     car car2=new car("Ford","grey","F150",2012,23000);
     print(car1.brand+" "+car1.model+" "+car1.value);
     print(car2.brand+" "+car2.model+" "+car2.value);
