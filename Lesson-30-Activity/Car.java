@@ -12,6 +12,5 @@ class car{
       this.value=value;
     }
     void honk(){
-      System.out.println("This car is a "+color+" "+year+" "+model+" "+model+" that is worth "+value);
     }
 }

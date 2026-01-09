@@ -24,7 +24,6 @@ class Main {
       this.value=value;
     }
     void honk(){
-      System.out.println("This car is a "+color+" "+year+" "+brand+" "+model+" that is worth "+value);
     }
   }
   int randInt(int lower, int upper){
