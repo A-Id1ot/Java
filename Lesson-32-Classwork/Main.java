@@ -12,9 +12,6 @@ class Main {
     Student student1 = new Student("john",10,94, g1,courses1);
     Student student2 = new Student("jane",12,100,g2,courses2);
   }
-
-
-  
   int randInt(int lower, int upper){
     int range = upper - lower;
     return (int)(Math.random()*range+lower);
