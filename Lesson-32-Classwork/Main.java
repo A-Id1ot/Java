@@ -16,5 +16,4 @@ class Main {
     int range = upper - lower;
     return (int)(Math.random()*range+lower);
   }
-
 }
