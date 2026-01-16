@@ -9,8 +9,8 @@ class Main {
     double[] g2 = {65,75,60};
     String[]  courses1  = {"EEFG7QH","FSFC3","HQFC3TH","HUF43X"};
     String[]  courses2  = {"MRF43","PGF43Q3C","SCF43QG","HUF43X"};
-    Student student1 = new Student("john",10,94, g1,courses1);
-    Student student2 = new Student("jane",12,100,g2,courses2);
+    Student s1 = new Student("john",10,94, g1,courses1);
+    Student s2 = new Student("jane",12,100,g2,courses2);
   }
   int randInt(int lower, int upper){
     int range = upper - lower;
