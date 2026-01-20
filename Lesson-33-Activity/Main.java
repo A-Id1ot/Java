@@ -11,6 +11,7 @@ class Main {
     System.out.println("The "+cigarettes.itemName+" costs "+cigarettes.itemPrice);
     CartItem soup=new CartItem("soup",10,12,false);
     System.out.println("The "+soup.itemName+" costs "+soup.itemPrice);
+    System.out.println("The total is "+((uhhh.getPrice()+cigarettes.getPrice()+soup.getPrice())*1.08675)+" dollars.");
   }
   int randInt(int lower, int upper){
     int range = upper - lower;
