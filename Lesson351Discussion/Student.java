@@ -38,4 +38,12 @@ class Student{
     }
     return false;
   }
+  public double getGpa() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'getGpa'");
+  }
+  public Object getId() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'getId'");
+  }
 }
