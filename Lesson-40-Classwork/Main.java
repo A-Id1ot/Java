@@ -11,9 +11,9 @@ class Main {
   void print(Object o){ System.out.println(o);}
   void printt(Object o){ System.out.print(o);}
   void init() {
-      Database   db =  new  Database("jdbc:sqlite:cr101.db");
+      Database db=new Database("jdbc:sqlite:cr101.db");
+      String sql = "Select * From cr101 where period = '3' and room = '106';";
       String queryRequest = db.runSQL(sql, "table-auto");
-      String sql = "Select * From cr101 where StudentID = 'student1';";
 		  print(queryRequest);
       }    
 }
