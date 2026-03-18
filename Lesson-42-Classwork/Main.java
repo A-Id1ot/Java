@@ -1,0 +1,28 @@
+import java.io.IOException;
+import java.sql.*;
+//For compiling on the shell on repl: Same on mac
+//javac -cp sqlite-jdbc-3.23.1.jar: Main.java
+
+//Use for windows
+//javac -cp sqlite-jdbc-3.23.1.jar; ServerExample.java
+class Main {
+
+ public static void main(String[] args)throws IOException{
+    (new Main()).init();
+  }
+
+  void print(Object o){ System.out.println(o);}
+  void printt(Object o){ System.out.print(o);}
+
+  void init() {
+      String queryResult="";
+      String sql ="";
+
+      Database   db =  new  Database("jdbc:sqlite:students.db");	
+      sql = "insert into cr101(course, section, period, teacher1, room, studentid)
+              values("MCLUB1", 3, 1, "WHOKNOWS", "ROOFTOP", "STUDENT2")
+              select * from cr101 limit 10";
+      queryResult = db.runSQL(sql,"table-auto");
+      print(queryResult);
+  }    
+}
