@@ -14,11 +14,11 @@ class Main {
     String result="";
     String sql = "";
 		Database db = new Database("jdbc:sqlite:chinook.db" );	
-    //select albums.Title, artists.Name AS Artist from albums
-    //inner join artists on albums.ArtistId = artists.ArtistId LIMIT 20;
+    //select albums.Title, artists.Name from albums
+    //inner join artists on albums.ArtistId = artists.ArtistId limit 20;
     //select tracks.Name from tracks
-    //inner join genreson tracks.GenreId = genres.GenreId where genres.Name IN ('Blues', 'Latin', 'Pop', 'Classical') LIMIT 20;
+    //inner join genreson tracks.GenreId = genres.GenreId where genres.Name IN ('Blues', 'Latin', 'Pop', 'Classical') limit 20;
     select tracks.Name from tracks
-    inner join playlist_track on tracks.TrackId = playlist_track.TrackId inner join playlists on playlist_track.PlaylistId = playlists.PlaylistId where playlists.Name = 'Grunge'LIMIT 20;
+    inner join playlist_track on tracks.TrackId = playlist_track.TrackId inner join playlists on playlist_track.PlaylistId = playlists.PlaylistId where playlists.Name = 'Grunge' limit 20;
   }    
 }
