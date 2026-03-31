@@ -27,19 +27,22 @@ class Main {
    // Add your  code here
     server.createContext("/", new RouteHandler("You are connected, but route not given or incorrect....") );
     String sql = "";
+    String sql1 = "";
+    String sql2 = "";
+    String sql3 = "";
     sql  = "Select * from customers";
     server.createContext("/customers", new RouteHandler(db,sql));
-    sql  = "Select * from employees";
-    server.createContext("/employees", new RouteHandler(db,sql));
-    sql  = " Select tracks.name,artist.name from tracks";
-    sql += " Inner Join albums ON tracks.albumid=albums.albumid";
-    sql += " Inner Join artists ON albums.artistid=artists.artistid limit 10";
-    server.createContext("/songs", new RouteHandler(db,sql));
-    sql  = "Select customers.firstname, customers.lastname, tracks.name, invoices.invoicedate from customers";
-    sql += "inner join invoices on customers.customerid = invoices.customerid";
-    sql += "inner join invoice_items on invoices.invoiceid = invoice_items.invoiceid";
-    sql += "inner join tracks on invoice_items.trackid = tracks.trackid limit 10";
-    server.createContext("/customersongs", new RouteHandler(db,sql));
+    sql1  = "Select * from employees";
+    server.createContext("/employees", new RouteHandler(db,sql1));
+    sql2  = " Select tracks.name,artist.name from tracks";
+    sql2 += " Inner Join albums ON tracks.albumid=albums.albumid";
+    sql2 += " Inner Join artists ON albums.artistid=artists.artistid limit 10";
+    server.createContext("/songs", new RouteHandler(db,sql2));
+    sql3  = "Select customers.firstname, customers.lastname, tracks.name, invoices.invoicedate from customers";
+    sql3 += "inner join invoices on customers.customerid = invoices.customerid";
+    sql3 += "inner join invoice_items on invoices.invoiceid = invoice_items.invoiceid";
+    sql3 += "inner join tracks on invoice_items.trackid = tracks.trackid limit 10";
+    server.createContext("/customersongs", new RouteHandler(db,sql3));
     //Start the server
     server.start();
     System.out.println("Server is listening on port "+port);
